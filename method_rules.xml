@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<method_rules>
+	<method_rule>
+		<name>renderForDesigner</name>
+		<name_sig>public void renderForDesigner</name_sig>
+		<signature>public void renderForDesigner(WbdWidget instance, UimData ud, WbdRenderHelper buf) </signature>
+		<new_signature>public void renderForDesigner(WbdGenerator generator, WbdWidget instance, UimData ud, WbdRenderHelper rh) </new_signature>
+	</method_rule>
+
+	<method_rule>
+		<name>renderForLivePage</name>
+		<name_sig>public void renderForLivePage</name_sig>
+		<signature>public void renderForLivePage(WbdWidget instance, UimData ud, WbdRenderHelper buf) </signature>
+		<new_signature>public void renderForPreview(WbdGenerator generator, WbdWidget instance, UimData ud, WbdRenderHelper rh) </new_signature>
+	</method_rule>
+	
+	<method_rule>
+		<name>renderForProduction</name>
+		<name_sig>public void renderForProduction</name_sig>
+		<signature>public void renderForProduction(WbdWidget instance, UimHelper ud, WbdRenderHelper buf, SpriteGenerator spriteGenerator) </signature>
+		<new_signature>public void renderForJSP(WbdGenerator generator, WbdWidget instance, UimHelper ud, WbdRenderHelper rh)</new_signature>
+	</method_rule>
+	
+	<method_rule>
+		<name>getCodeInserters</name>
+		<name_sig>public void getCodeInserters</name_sig>
+		<signature>public void getCodeInserters(WbdWidget instance, UimData ud, CodeInserterList codeInserterList) </signature>
+		<new_signature>public void getCodeInserters(WbdGenerator generator, WbdWidget instance, UimData ud, CodeInserterList codeInserterList) </new_signature>
+	</method_rule>
+	
+	<method_rule>
+		<name>getSizeInfo</name>
+		<name_sig>public WbdSizeInfo getSizeInfo</name_sig>
+		<signature>public WbdSizeInfo getSizeInfo(WbdWidget instance) </signature>
+		<new_signature>public WbdSizeInfo getSizeInfo(WbdGenerator generator, WbdWidget instance) </new_signature>
+	</method_rule>
+	
+	<method_rule>
+		<name>toolboxIcon</name>
+		<name_sig>public String toolboxIcon</name_sig>
+		<signature>public String toolboxIcon(WbdWidget instance) </signature>
+		<new_signature>public String toolboxIcon(WbdGenerator generator , WbdWidget instance) </new_signature>
+	</method_rule>
+</method_rules>
